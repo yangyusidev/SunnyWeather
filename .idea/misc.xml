@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/AndroidFirstLine/SunnyWeather/app/src/main/res/layout/activity_weather.xml" value="0.18518518518518517" />
+        <entry key="..\:/AndroidStudioProjects/AndroidFirstLine/SunnyWeather/app/src/main/res/layout/forecast.xml" value="0.18518518518518517" />
+        <entry key="..\:/AndroidStudioProjects/AndroidFirstLine/SunnyWeather/app/src/main/res/layout/life_index.xml" value="0.18518518518518517" />
+        <entry key="..\:/AndroidStudioProjects/AndroidFirstLine/SunnyWeather/app/src/main/res/layout/now.xml" value="0.18518518518518517" />
         <entry key="..\:/project/SunnyWeather/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/project/SunnyWeather/app/src/main/res/layout/activity_weather.xml" value="0.3375" />
         <entry key="..\:/project/SunnyWeather/app/src/main/res/layout/fragment_place.xml" value="0.24365942028985507" />

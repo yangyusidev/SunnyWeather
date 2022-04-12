@@ -6,6 +6,7 @@
     android:scrollbars="none"
     android:overScrollMode="never"
     android:visibility="invisible"
+    android:id="@+id/weatherLayout"
     tools:context=".ui.weather.WeatherActivity">
 
     <LinearLayout
