@@ -1,13 +1,14 @@
 package com.sunnyweather.android.ui.weather
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.lifecycle.Observer
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.ViewModelProviders
 import com.sunnyweather.android.R
 import com.sunnyweather.android.logic.model.Weather
@@ -25,7 +26,22 @@ class WeatherActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_weather)
+
+        // 以下方法已被废弃
+//        val decorView = window.decorView
+//        decorView.systemUiVisibility =
+//            View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+
+        // 下面方法是隐藏状态栏
+//        val controller = ViewCompat.getWindowInsetsController(titleLayout)
+//        controller?.hide(WindowInsetsCompat.Type.statusBars())
+
+        // 这个方法是沉浸式状态栏（状态栏可见），可以做到低版本兼容
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        window.statusBarColor = Color.TRANSPARENT
+
         if (viewModel.locationLng.isEmpty()) {
             viewModel.locationLng = intent.getStringExtra("location_lng") ?: ""
         }
