@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "SunnyWeather"
 include ':app'
+include ':Javalib'
+include ':Kotlinlib'
